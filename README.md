@@ -2,26 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
-## Development server
+# Angular Elements
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
+`npm run build`
+This will trigger the `./custombuild.sh` script and bundle all the `.js` files into `./preview/` folder
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## References
+- [Link 1](https://blog.bitsrc.io/using-angular-elements-why-and-how-part-1-35f7fd4f0457)
+- [Link 2](https://studiolacosanostra.github.io/2019/07/19/Build-a-reusable-Angular-library-and-web-component/)
+- [Link 3](https://medium.com/@sumeet.ru/how-to-create-custom-angular-element-a9e92dac2c13)
