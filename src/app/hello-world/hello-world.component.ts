@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   templateUrl: './hello-world.component.html',
@@ -6,9 +6,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HelloWorldComponent implements OnInit {
 
+  @Input() title: string;
+  @Input() rname: string;
+  @Input() occupation: string;
+  @Input() location: string;
+  @Input() first: string;
+  @Output() display = new EventEmitter();
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
+
+  showInfo() {
+    this.display.emit(`Name: ${this.rname}
+    Occupation: ${this.occupation}
+    Based In: ${this.location}
+    First Appearance: ${this.first}`);
   }
 
 }

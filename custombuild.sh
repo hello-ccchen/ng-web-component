@@ -1,2 +1,2 @@
 #!/bin/sh
-ng build ng-web-component --prod --output-hashing=none && cat dist/ng-web-component/runtime.js dist/ng-web-component/polyfills.js dist/ng-web-component/scripts.js dist/ng-web-component/main.js > preview/ng-web-component.js
+ng build ng-web-component --prod --output-hashing=none && cat dist/ng-web-component/runtime-es5.js dist/ng-web-component/polyfills-es5.js dist/ng-web-component/scripts.js dist/ng-web-component/main-es5.js > preview/ng-web-component-bundle.js

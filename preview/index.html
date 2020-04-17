@@ -1,6 +1,16 @@
 <html>
-  <body>
-    <app-hello-world></app-hello-world>
-    <script src="./ng-web-component.js"></script>
-  </body>
+
+<body>
+  <app-hello-world title="Batman" rname="Bruce Wayne" occupation="World's Greatest Detective" location="Gotham"
+    first="Detective Comics #27">
+  </app-hello-world>
+  <script>
+    const component = document.querySelector('app-hello-world');
+    component.addEventListener('display', (event) => {
+      alert(event.detail);
+    })
+  </script>
+  <script src="./ng-web-component-bundle.js"></script>
+</body>
+
 </html>

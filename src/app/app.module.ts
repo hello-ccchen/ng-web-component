@@ -20,4 +20,5 @@ export class AppModule {
     const custom = createCustomElement(HelloWorldComponent, {injector: this.injector });
     customElements.define('app-hello-world', custom);
   }
+  ngDoBootstrap() {}
 }
